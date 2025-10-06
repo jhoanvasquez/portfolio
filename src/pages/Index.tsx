@@ -1,4 +1,6 @@
 import Navigation from "@/components/Navigation";
+import TypingAnimation from "@/components/TypingAnimation";
+import AnimatedTerminal from "@/components/AnimatedTerminal";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -15,18 +17,24 @@ const Index = () => {
       />
       
       <main className="container mx-auto px-6 pt-32 pb-20 relative">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
-          <div className="mb-20">
-            <p className="text-[hsl(var(--code-comment))] mb-4 animate-fade-in">
-              Hi all. I am
-            </p>
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in">
-              Your Name
-            </h1>
-            <p className="text-2xl md:text-3xl text-[hsl(var(--code-keyword))] mb-8 flex items-center gap-3 animate-fade-in">
-              <span className="text-primary">›</span> Front-end developer
-            </p>
+          <div className="mb-20 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-[hsl(var(--code-comment))] mb-4 animate-fade-in">
+                Hi all. I am
+              </p>
+              <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in">
+                Your Name
+              </h1>
+              <div className="text-2xl md:text-3xl mb-8 flex items-center gap-3 animate-fade-in min-h-[48px]">
+                <span className="text-primary">›</span>
+                <TypingAnimation 
+                  text="Front-end developer" 
+                  speed={80}
+                  className="text-[hsl(var(--code-keyword))]"
+                />
+              </div>
             
             <div className="space-y-4 text-[hsl(var(--muted-foreground))] animate-fade-in">
               <p className="text-[hsl(var(--code-comment))]">// complete the journey to continue</p>
@@ -45,18 +53,24 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="mt-12 flex gap-4 animate-fade-in">
-              <Link to="/projects">
-                <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-                  View My Work
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
-              </Link>
-              <Link to="/about">
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  About Me
-                </Button>
-              </Link>
+              <div className="mt-12 flex gap-4 animate-fade-in">
+                <Link to="/projects">
+                  <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+                    View My Work
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </Link>
+                <Link to="/about">
+                  <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                    About Me
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Animated Terminal */}
+            <div className="animate-fade-in lg:mt-0 mt-8">
+              <AnimatedTerminal />
             </div>
           </div>
 
