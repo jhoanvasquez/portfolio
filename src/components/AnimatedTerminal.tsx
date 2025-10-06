@@ -33,7 +33,7 @@ const AnimatedTerminal = () => {
         <div className="w-3 h-3 rounded-full bg-primary"></div>
       </div>
       <div className="space-y-2 font-mono text-sm min-h-[160px]">
-        {lines.map((line, index) => (
+        {lines.filter(line => line).map((line, index) => (
           <div
             key={index}
             className={`animate-fade-in ${
