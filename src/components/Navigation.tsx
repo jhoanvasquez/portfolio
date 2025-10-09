@@ -17,7 +17,7 @@ const Navigation = () => {
             to="/" 
             className="text-[hsl(var(--code-comment))] hover:text-foreground transition-colors text-sm"
           >
-            your-name
+            jhoan-vasquez
           </Link>
           
           <div className="flex gap-8">

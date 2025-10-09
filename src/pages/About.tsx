@@ -31,6 +31,8 @@ const About = () => {
               <div className="pl-8 space-y-2 text-[hsl(var(--muted-foreground))]">
                 <p><span className="text-primary">name:</span> <span className="text-[hsl(var(--code-string))]">"Your Name"</span>,</p>
                 <p><span className="text-primary">role:</span> <span className="text-[hsl(var(--code-string))]">"Full-stack Developer"</span>,</p>
+                <p><span className="text-primary">name:</span> <span className="text-[hsl(var(--code-string))]">"Jhoan Vasquez"</span>,</p>
+                <p><span className="text-primary">role:</span> <span className="text-[hsl(var(--code-string))]">"Full-stack Engineer"</span>,</p>
                 <p><span className="text-primary">location:</span> <span className="text-[hsl(var(--code-string))]">"Your City"</span>,</p>
                 <p><span className="text-primary">passion:</span> <span className="text-[hsl(var(--code-string))]">"Building end-to-end solutions from database to UI"</span></p>
               </div>
@@ -39,10 +41,9 @@ const About = () => {
 
             <div className="prose prose-invert max-w-none">
               <p className="text-[hsl(var(--muted-foreground))] leading-relaxed">
-                I'm a passionate full-stack developer who loves building complete web applications from the ground up. 
-                From designing databases and APIs to crafting responsive user interfaces, I handle every layer of the stack. 
-                With a commitment to writing clean, maintainable code and architecting scalable systems, I create 
-                digital experiences that are both powerful and delightful to use.
+                I'm a passionate Full-stack Engineer who loves building responsive and user-friendly web applications. 
+                With a keen eye for design and a commitment to writing clean, maintainable code, I strive to create 
+                digital experiences that not only look great but also perform exceptionally well.
               </p>
             </div>
           </div>
