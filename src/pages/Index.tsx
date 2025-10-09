@@ -30,14 +30,14 @@ const Index = () => {
               <div className="text-2xl md:text-3xl mb-8 flex items-center gap-3 animate-fade-in min-h-[48px]">
                 <span className="text-primary">›</span>
                 <TypingAnimation 
-                  text="Front-end developer" 
+                  text="Full-stack Engineer" 
                   speed={80}
                   className="text-[hsl(var(--code-keyword))]"
                 />
               </div>
             
             <div className="space-y-4 text-[hsl(var(--muted-foreground))] animate-fade-in">
-              <p className="text-[hsl(var(--code-comment))]">// complete the journey to continue</p>
+              <p className="text-[hsl(var(--code-comment))]">/**I'm passionate about creating robust and scalable full-stack solutions tailored to their business needs.*/</p>
               <p className="text-[hsl(var(--code-comment))]">// find my profile on Github:</p>
               <p>
                 <span className="text-[hsl(var(--code-keyword))]">const</span>{" "}
@@ -86,9 +86,11 @@ const Index = () => {
                 <span className="text-[hsl(var(--code-keyword))]">function</span>{" "}
                 <span className="text-[#fbbf24]">buildAwesomeThings</span>() &#123;{"\n"}
                 {"  "}<span className="text-[hsl(var(--code-keyword))]">const</span> skills = [
-                <span className="text-[hsl(var(--code-string))]">'React'</span>,{" "}
+                <span className="text-[hsl(var(--code-string))]">'Java'</span>,{" "}
+                <span className="text-[hsl(var(--code-string))]">'Python'</span>,{" "}
                 <span className="text-[hsl(var(--code-string))]">'TypeScript'</span>,{" "}
-                <span className="text-[hsl(var(--code-string))]">'CSS'</span>];{"\n"}
+                <span className="text-[hsl(var(--code-string))]">'React'</span>,{" "}
+                <span className="text-[hsl(var(--code-string))]">'Angular'</span>];{"\n"}
                 {"  "}<span className="text-[hsl(var(--code-keyword))]">return</span> skills.map(skill {'=>'} {"\n"}
                 {"    "}<span className="text-[hsl(var(--code-string))]">`Building with $&#123;skill&#125;`</span>{"\n"}
                 {"  "});{"\n"}
@@ -106,7 +108,7 @@ const Index = () => {
             <p className="text-sm text-[hsl(var(--code-comment))]">find me in:</p>
             <div className="flex gap-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/jhoanvasquez" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-[hsl(var(--muted-foreground))] hover:text-primary transition-colors"
@@ -124,7 +126,7 @@ const Index = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="mailto:your.email@example.com"
+                href="mailto:jhoan0498@gmail.com"
                 className="text-[hsl(var(--muted-foreground))] hover:text-primary transition-colors"
                 aria-label="Email"
               >

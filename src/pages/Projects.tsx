@@ -7,27 +7,27 @@ const Projects = () => {
     {
       id: 1,
       title: "E-Commerce Platform",
-      description: "Full-stack e-commerce with Stripe payments, PostgreSQL database, REST API, admin dashboard, and inventory management system.",
-      tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Prisma", "Stripe", "Redis"],
-      github: "#",
+      description: "Back-end e-commerce with Bold payments, PostgreSQL database, REST API, admin dashboard, and inventory management system.",
+      tech: ["Python", "Django", "PostgreSQL", "Django's cache framework", "AWS S3"],
+      github: "https://github.com/jhoanvasquez/hardcoregames-back",
       demo: "#",
       featured: true,
     },
     {
       id: 2,
-      title: "Real-Time Chat Application",
-      description: "WebSocket-based chat app with user authentication, message persistence, file uploads, and real-time notifications.",
-      tech: ["React", "Node.js", "Socket.io", "MongoDB", "JWT", "AWS S3"],
-      github: "#",
+      title: "Workouts app",
+      description: "Intelligent Web Recommendation System — Designed and implemented using Django as part of my Systems Engineering graduation project, focused on delivering personalized user experiences.",
+      tech: ["Python", "Django", "JavaScript", "PostgreSQL"],
+      github: "https://github.com/jhoanvasquez/Workouts",
       demo: "#",
       featured: true,
     },
     {
       id: 3,
-      title: "REST API Gateway",
-      description: "Microservices API gateway with rate limiting, authentication, caching, and load balancing.",
+      title: "LangChain Chatbot",
+      description: "Smart Chatbot with LangChain — Developed an LLM-powered assistant that can comprehend and respond based on uploaded files, showcasing the power of LangChain in a compact, efficient implementation under 100 lines of code.",
       tech: ["Node.js", "Express", "Redis", "PostgreSQL", "Docker"],
-      github: "#",
+      github: "https://github.com/jhoanvasquez/langchain-chat-with-your-data",
       demo: "#",
       featured: false,
     },
@@ -36,24 +36,6 @@ const Projects = () => {
       title: "Task Management SaaS",
       description: "Multi-tenant task management platform with team collaboration, Kanban boards, and analytics.",
       tech: ["Next.js", "tRPC", "PostgreSQL", "Prisma", "TailwindCSS"],
-      github: "#",
-      demo: "#",
-      featured: false,
-    },
-    {
-      id: 5,
-      title: "Social Media Analytics",
-      description: "Data aggregation platform with scheduled jobs, data visualization, and export functionality.",
-      tech: ["React", "GraphQL", "Node.js", "MongoDB", "Bull Queue"],
-      github: "#",
-      demo: "#",
-      featured: false,
-    },
-    {
-      id: 6,
-      title: "Recipe Sharing Platform",
-      description: "Full-stack recipe app with user authentication, image uploads, search, and personalized recommendations.",
-      tech: ["React", "Node.js", "PostgreSQL", "Elasticsearch", "AWS"],
       github: "#",
       demo: "#",
       featured: false,
@@ -186,8 +168,9 @@ const Projects = () => {
             <Button 
               variant="outline" 
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              onClick={() => window.open("https://github.com/jhoanvasquez")}
             >
-              <Github className="w-4 h-4 mr-2" />
+              <Github className="w-4 h-4 mr-2"/>
               View GitHub Profile
             </Button>
           </div>

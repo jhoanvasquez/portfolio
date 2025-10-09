@@ -3,9 +3,9 @@ import { Code2, Palette, Rocket, Database } from "lucide-react";
 
 const About = () => {
   const skills = [
-    { category: "Frontend", items: ["React", "TypeScript", "Tailwind CSS", "Next.js"] },
-    { category: "Backend", items: ["Node.js", "Express", "PostgreSQL", "Prisma", "GraphQL", "REST APIs"] },
-    { category: "DevOps & Tools", items: ["Docker", "Git", "AWS", "Redis", "CI/CD"] },
+    { category: "Frontend", items: ["React.js", "Next.js", "Angular", "TypeScript", "Tailwind CSS"] },
+    { category: "Backend", items: ["Java", "SpringBoot", "Python", "Django", "PostgreSQL", "GraphQL", "REST APIs"] },
+    { category: "DevOps & Tools", items: ["Docker", "Kubernetes", "Git", "AWS", "Redis", "CI/CD", "Jenkins"] },
   ];
 
   return (
@@ -29,11 +29,8 @@ const About = () => {
                 <span className="text-primary">const</span> <span className="text-[hsl(var(--code-keyword))]">developer</span> = &#123;
               </p>
               <div className="pl-8 space-y-2 text-[hsl(var(--muted-foreground))]">
-                <p><span className="text-primary">name:</span> <span className="text-[hsl(var(--code-string))]">"Your Name"</span>,</p>
-                <p><span className="text-primary">role:</span> <span className="text-[hsl(var(--code-string))]">"Full-stack Developer"</span>,</p>
                 <p><span className="text-primary">name:</span> <span className="text-[hsl(var(--code-string))]">"Jhoan Vasquez"</span>,</p>
                 <p><span className="text-primary">role:</span> <span className="text-[hsl(var(--code-string))]">"Full-stack Engineer"</span>,</p>
-                <p><span className="text-primary">location:</span> <span className="text-[hsl(var(--code-string))]">"Your City"</span>,</p>
                 <p><span className="text-primary">passion:</span> <span className="text-[hsl(var(--code-string))]">"Building end-to-end solutions from database to UI"</span></p>
               </div>
               <p className="text-lg text-[hsl(var(--muted-foreground))] mt-4">&#125;;</p>
@@ -41,7 +38,7 @@ const About = () => {
 
             <div className="prose prose-invert max-w-none">
               <p className="text-[hsl(var(--muted-foreground))] leading-relaxed">
-                I'm a passionate Full-stack Engineer who loves building responsive and user-friendly web applications. 
+                I'm a passionate Full-stack Engineer  with over 5 years of expierence in software development, who loves building responsive and user-friendly web applications. 
                 With a keen eye for design and a commitment to writing clean, maintainable code, I strive to create 
                 digital experiences that not only look great but also perform exceptionally well.
               </p>
@@ -53,7 +50,7 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-8">
               <span className="text-[hsl(var(--code-comment))]">//</span> What I Do
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors">
                 <Code2 className="w-8 h-8 text-primary mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Clean Code</h3>
@@ -70,13 +67,13 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors">
+              {/* <div className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors">
                 <Palette className="w-8 h-8 text-primary mb-4" />
                 <h3 className="text-xl font-semibold mb-2">UI/UX Design</h3>
                 <p className="text-[hsl(var(--muted-foreground))]">
                   Crafting intuitive interfaces with attention to detail and user experience.
                 </p>
-              </div>
+              </div> */}
 
               <div className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors">
                 <Rocket className="w-8 h-8 text-primary mb-4" />
