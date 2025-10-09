@@ -4,11 +4,12 @@ const AnimatedTerminal = () => {
   const [lines, setLines] = useState<string[]>([]);
   
   const commands = [
-    "$ npm install creativity",
-    "$ npm install problem-solving",
-    "$ npm run build-future",
-    "> Building awesome projects...",
-    "✓ Compilation successful!",
+    "$ git clone fullstack-app.git",
+    "$ docker-compose up -d",
+    "$ npm run db:migrate",
+    "> Starting development server...",
+    "✓ Database connected",
+    "✓ Server running on :3000",
   ];
 
   useEffect(() => {

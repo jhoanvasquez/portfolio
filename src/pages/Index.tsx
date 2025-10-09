@@ -30,7 +30,7 @@ const Index = () => {
               <div className="text-2xl md:text-3xl mb-8 flex items-center gap-3 animate-fade-in min-h-[48px]">
                 <span className="text-primary">›</span>
                 <TypingAnimation 
-                  text="Front-end developer" 
+                  text="Full-stack developer" 
                   speed={80}
                   className="text-[hsl(var(--code-keyword))]"
                 />
@@ -84,14 +84,12 @@ const Index = () => {
             <pre className="text-sm leading-relaxed">
               <code>
                 <span className="text-[hsl(var(--code-keyword))]">function</span>{" "}
-                <span className="text-[#fbbf24]">buildAwesomeThings</span>() &#123;{"\n"}
-                {"  "}<span className="text-[hsl(var(--code-keyword))]">const</span> skills = [
-                <span className="text-[hsl(var(--code-string))]">'React'</span>,{" "}
-                <span className="text-[hsl(var(--code-string))]">'TypeScript'</span>,{" "}
-                <span className="text-[hsl(var(--code-string))]">'CSS'</span>];{"\n"}
-                {"  "}<span className="text-[hsl(var(--code-keyword))]">return</span> skills.map(skill {'=>'} {"\n"}
-                {"    "}<span className="text-[hsl(var(--code-string))]">`Building with $&#123;skill&#125;`</span>{"\n"}
-                {"  "});{"\n"}
+                <span className="text-[#fbbf24]">buildFullStackApps</span>() &#123;{"\n"}
+                {"  "}<span className="text-[hsl(var(--code-keyword))]">const</span> stack = &#123;{"\n"}
+                {"    "}frontend: [<span className="text-[hsl(var(--code-string))]">'React'</span>, <span className="text-[hsl(var(--code-string))]">'TypeScript'</span>],{"\n"}
+                {"    "}backend: [<span className="text-[hsl(var(--code-string))]">'Node.js'</span>, <span className="text-[hsl(var(--code-string))]">'PostgreSQL'</span>]{"\n"}
+                {"  "}&#125;;{"\n"}
+                {"  "}<span className="text-[hsl(var(--code-keyword))]">return</span> <span className="text-[hsl(var(--code-string))]">'End-to-end solutions'</span>;{"\n"}
                 &#125;
               </code>
             </pre>
