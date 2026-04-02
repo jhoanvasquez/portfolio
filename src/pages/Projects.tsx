@@ -6,11 +6,11 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "Back-end e-commerce with Bold payments, PostgreSQL database, REST API, admin dashboard, and inventory management system.",
-      tech: ["Python", "Django", "PostgreSQL", "Django's cache framework", "AWS S3"],
-      github: "https://github.com/jhoanvasquez/hardcoregames-back",
-      demo: "#",
+      title: "HardCore Games E-Commerce",
+      description: "HardCore Games E-Commerce es un e-commerce de videojuegos donde la experiencia es tan dinámica como el catálogo. Gestiona inventario en tiempo real, compras seguras y órdenes rápidas, todo respaldado por sesiones JWT para máxima seguridad. Construido con Next.js, FastAPI y Django, y potenciado por PostgreSQL, es la tienda ideal para gamers que buscan algo más que solo comprar.",
+      tech: ["Next.js", "FastAPI", "Django", "JWT", "PostgreSQL"],
+      github: "https://github.com/jhoanvasquez/back-fastapi-hardcoregames",
+      demo: "https://hardcoregames.co",
       featured: true,
     },
     {
@@ -45,7 +45,7 @@ const Projects = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      
+
       <main className="container mx-auto px-6 pt-32 pb-20">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
@@ -62,7 +62,7 @@ const Projects = () => {
           {/* Featured Projects */}
           <div className="mb-16 space-y-12">
             {projects.filter(p => p.featured).map((project) => (
-              <div 
+              <div
                 key={project.id}
                 className="bg-card border border-border rounded-lg overflow-hidden hover:border-primary transition-colors group"
               >
@@ -72,14 +72,14 @@ const Projects = () => {
                       {project.title}
                     </h3>
                     <div className="flex gap-3">
-                      <a 
+                      <a
                         href={project.github}
                         className="text-[hsl(var(--muted-foreground))] hover:text-primary transition-colors"
                         aria-label="View on GitHub"
                       >
                         <Github className="w-5 h-5" />
                       </a>
-                      <a 
+                      <a
                         href={project.demo}
                         className="text-[hsl(var(--muted-foreground))] hover:text-primary transition-colors"
                         aria-label="View demo"
@@ -88,14 +88,14 @@ const Projects = () => {
                       </a>
                     </div>
                   </div>
-                  
+
                   <p className="text-[hsl(var(--muted-foreground))] mb-6 leading-relaxed">
                     {project.description}
                   </p>
-                  
+
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
-                      <span 
+                      <span
                         key={tech}
                         className="px-3 py-1 text-sm bg-secondary text-secondary-foreground rounded border border-border"
                       >
@@ -115,7 +115,7 @@ const Projects = () => {
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               {projects.filter(p => !p.featured).map((project) => (
-                <div 
+                <div
                   key={project.id}
                   className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
                 >
@@ -124,14 +124,14 @@ const Projects = () => {
                       {project.title}
                     </h3>
                     <div className="flex gap-2">
-                      <a 
+                      <a
                         href={project.github}
                         className="text-[hsl(var(--muted-foreground))] hover:text-primary transition-colors"
                         aria-label="View on GitHub"
                       >
                         <Github className="w-4 h-4" />
                       </a>
-                      <a 
+                      <a
                         href={project.demo}
                         className="text-[hsl(var(--muted-foreground))] hover:text-primary transition-colors"
                         aria-label="View demo"
@@ -140,14 +140,14 @@ const Projects = () => {
                       </a>
                     </div>
                   </div>
-                  
+
                   <p className="text-[hsl(var(--muted-foreground))] text-sm mb-4">
                     {project.description}
                   </p>
-                  
+
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (
-                      <span 
+                      <span
                         key={tech}
                         className="px-2 py-1 text-xs bg-secondary text-secondary-foreground rounded border border-border"
                       >
@@ -165,8 +165,8 @@ const Projects = () => {
             <p className="text-[hsl(var(--muted-foreground))] mb-6">
               Want to see more? Check out my GitHub for additional projects and contributions.
             </p>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
               onClick={() => window.open("https://github.com/jhoanvasquez")}
             >
@@ -181,4 +181,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
