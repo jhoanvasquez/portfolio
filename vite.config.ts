@@ -5,6 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Served from https://jhoanvasquez.github.io/portfolio/, so asset URLs must
+  // be prefixed with the repository name. Kept at "/" in development.
+  base: mode === "production" ? "/portfolio/" : "/",
   server: {
     host: "::",
     port: 8080,
